@@ -1,7 +1,8 @@
 <ion-view view-title="Agile Deck">
   <ion-content>
-    <div style="text-align:center">
-      <p ng-bind-html="card.name || card"></p>
-    </div>
+    <p ng-bind-html="card.name || card"
+        deck-full-height-text
+        style="font-size:8em; text-align:center;">
+    </p>
   </ion-content>
 </ion-view>

@@ -8,7 +8,7 @@ angular.module('deck.controllers', [])
     }
   };
 
-  $scope.card = "Swipe to select a card &rarr;"
+  $scope.card = "&rarr;"
 
   $scope.chooseCard = function(card) {
     $scope.card = card;
