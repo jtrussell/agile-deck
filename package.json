@@ -1,6 +1,6 @@
 {
   "name": "agile-deck",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "agile-deck: An Ionic project",
   "dependencies": {
     "gulp": "^3.5.6",
@@ -19,5 +19,8 @@
     "org.apache.cordova.console",
     "com.ionic.keyboard"
   ],
-  "cordovaPlatforms": []
+  "cordovaPlatforms": [],
+  "scripts": {
+    "release-android": "_scripts\\release-android.bat"
+  }
 }
