@@ -1,6 +1,7 @@
 angular.module('deck.controllers', [])
 
 .controller('AppCtrl', function($scope, $ionicModal) {
+  'use strict';
   var card, deck, decks = {
     goat: {
       name: 'Goat Deck',

@@ -7,6 +7,7 @@
 angular.module('deck', ['ionic', 'deck.controllers', 'deck.directives'])
 
 .run(function($ionicPlatform) {
+  'use strict';
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -15,12 +16,13 @@ angular.module('deck', ['ionic', 'deck.controllers', 'deck.directives'])
     }
     if (window.StatusBar) {
       // org.apache.cordova.statusbar required
-      StatusBar.styleDefault();
+      window.StatusBar.styleDefault();
     }
   });
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
+  'use strict';
   $stateProvider
 
   .state('app', {
@@ -38,7 +40,7 @@ angular.module('deck', ['ionic', 'deck.controllers', 'deck.directives'])
         templateUrl: 'templates/card.html',
       }
     }
-  })
+  });
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/poker');

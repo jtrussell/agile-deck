@@ -1,6 +1,7 @@
 angular.module('deck.directives', [])
 
 .directive('deckFullHeightText', function($window) {
+  'use strict';
   return {
     link: function(scope, element, attrs) {
       var $win = angular.element($window);
@@ -17,3 +18,5 @@ angular.module('deck.directives', [])
     }
   };
 })
+
+; // Done
