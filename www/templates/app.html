@@ -14,14 +14,14 @@
 
   <ion-side-menu side="left">
     <ion-header-bar class="bar-stable">
-      <h1 class="title">{{deck.name}}</h1>
+      <h1 class="title" ng-click="changeDeck()">{{getDeck().name}}</h1>
     </ion-header-bar>
     <ion-content>
       <ion-list>
-        <ion-item ng-repeat="card in deck.cards"
+        <ion-item ng-repeat="c in getDeck().cards"
             menu-close
-            ng-click="chooseCard(card)"
-            ng-bind-html="card.name || card">
+            ng-click="setCard(c)"
+            ng-bind-html="c.name || c">
         </ion-item>
       </ion-list>
     </ion-content>
