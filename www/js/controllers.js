@@ -4,12 +4,16 @@ angular.module('deck.controllers', [])
   'use strict';
   var card, deck, decks = {
     goat: {
-      name: 'Goat Deck',
+      name: 'Goats',
       cards: ['?', 0, '1/2', 1, 2, 3, 5, 8, 13, 20, 40, 100, '&infin;']
     },
     fibonacci: {
       name: 'Fibonacci',
       cards: ['?', 0, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, '&infin;']
+    },
+    tshirt: {
+      name: 'T-shirt Sizes',
+      cards: ['?', 'S', 'M', 'L', 'XL', '&infin;']
     }
   };
 
