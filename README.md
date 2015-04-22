@@ -1,6 +1,14 @@
-# Agile Deck (wip)
+# Agile Deck
 
 A silly app to play planning poker.
+
+
+## Usage
+
+Swiping right opens a drawer where you can choose a card, or change your deck.
+
+Change decks by tapping the deck name in your card drawer.
+
 
 ## Credits
 
